@@ -2,7 +2,8 @@ class User<ApplicationRecord
 
   before_save  {self.email = email.downcase}
   before_save  {self.username = username.downcase}
-  has_many :articles , dependent: :destroy 
+  has_many :articles , dependent: :destroy
+  has_many :comments 
 
   validates :username, presence: true , uniqueness: { case_sensitive: false } ,length: {minimum: 3 , maximum: 25}
   

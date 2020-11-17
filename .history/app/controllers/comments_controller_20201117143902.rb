@@ -4,8 +4,8 @@ class CommentsController < ApplicationController
   before_action :require_user , except: [:show , :index , :create ] 
 
   def create 
-    @article=Article.find(params[:article_id]) 
-    @comment=@article.comments.create(params[:comment].permit(:name,:comment))
+    @article=Article.find(params[:article_id])
+    @comment=@article.comments.create(params[:comment].permit(:user,:comment))
     redirect_to article_path(@article)
   end
 
