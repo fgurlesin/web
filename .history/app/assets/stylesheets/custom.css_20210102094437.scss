@@ -30,23 +30,13 @@
  
 .card {
   background-color: transparent;
+   
   margin-top: 20px;
 }
 
 #card_header{
   border-radius: 10px;
   background: transparent;
-}
-
-#article_description{
-  padding: 15px 27px;
-  line-height: 27px;
-  
-  box-shadow: 8px 5px 5px #9C9C9C;
-}
-
-#like_and_share{
-  float: right;
 }
 
 /* Left column */
@@ -64,7 +54,7 @@
 
 h1,h2,h3,h4,h5{
   color : black;
-  font-family: 'Amiri', serif; 
+  font-family: 'Amiri', serif,bold; 
 }
 p{
   font-family: 'Amiri', serif;
