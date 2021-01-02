@@ -1,5 +1,5 @@
 <div class="container  ">
-<%if logged_in?%>
+<% if logged_in? %>
 <%= form_for [@article, @article.comments.build] do |f| %>
  <div class="container mb-4 ">
     <div class="row pb-cmnt-container  ">
@@ -8,9 +8,9 @@
                 <div class="panel-body pb-cmnt-textarea">  
                   <div class="form-group row">  
                     <div class="col-12 "> 
-                      <%=f.text_area :comment  , class:"pb-cmnt-textarea" ,  placeholder:"Add your comment"   %>
+                      <%= f.text_area :comment, class: "pb-cmnt-textarea", placeholder: "Add your comment" %>
                     <form class="form-group row ">  
-                         <%=f.submit "Leave a Comment" , class: "btn btn-dark float-right"%>
+                         <%= f.submit "Leave a Comment", class: "btn btn-dark float-right" %>
                     </form></div>
                     
                   </div> 
@@ -21,6 +21,6 @@
     </div>
 </div>
  
-<%end%>
- <%end%>
+<% end %>
+ <% end %>
 </div>

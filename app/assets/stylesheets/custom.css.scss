@@ -12,25 +12,31 @@
   font-size:  2.5rem ;
 }
 
-#card_body{ 
-  background-color:#f6f5f4 ; 
-  margin-top: 10px; 
+.sticky{
+  justify-content : space-between;
+  position : -webkit-sticky;
+  position : sticky ;
+  top :4rem;
+}
+
+
+#card_body{
+  background-color:#f6f5f4 ;
   border-radius: 5px;
 }
 
-#card_body_show{ 
-  background-color:#FFFFFF ; 
-  margin-top: 10px; 
+#card_body_show{
+  background-color:#FFFFFF ;
+  margin-top: 10px;
   border-radius: 20px;
 }
 
 #container_style{
-  background-color: #ffffffc4; 
-} 
- 
+  background-color: #ffffffc4;
+}
+
 .card {
   background-color: transparent;
-  margin-top: 20px;
 }
 
 #card_header{
@@ -41,7 +47,7 @@
 #article_description{
   padding: 15px 27px;
   line-height: 27px;
-  
+
   box-shadow: 8px 5px 5px #9C9C9C;
 }
 
@@ -64,7 +70,7 @@
 
 h1,h2,h3,h4,h5{
   color : black;
-  font-family: 'Amiri', serif; 
+  font-family: 'Amiri', serif;
 }
 p{
   font-family: 'Amiri', serif;
@@ -77,19 +83,23 @@ p{
   float: left;
   font-weight: 400;
   text-align: center;
-  margin-left: 10px; 
+  margin-left: 10px;
 }
- 
+
 .nav-item{
-  font-family: Arial, Helvetica, sans-serif ; 
+  font-family: Arial, Helvetica, sans-serif ;
 }
 .nav-link:hover{
   color: #D9D9D9 !important;
 }
-
+.affix {
+    top:0;
+    position:sticky;
+    z-index:1000;
+}
 #home-container{
   margin-top: 25px;
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
 }
 
 #logo{
@@ -103,14 +113,14 @@ p{
 }
 
 .jumbotron{
-  background-image: asset-url('banner1.jpg') ;  
+  background-image: asset-url('banner1.jpg') ;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; 
-  height: 600px; 
+  background-size: cover;
+  height: 600px;
 }
 
- 
+
 html,
 body {
   height: 100%;
@@ -129,13 +139,13 @@ body {
   text-align: center;
 }
 
-.apple_pagination { 
+.apple_pagination {
   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-  background:transparent; 
+  background:transparent;
   text-align: center;
   padding: 1em;
   cursor: default; }
-  .apple_pagination a, .apple_pagination span { 
+  .apple_pagination a, .apple_pagination span {
     padding: 0.2em 0.3em; }
   .apple_pagination .disabled {
     color: #9C9C9C; }
@@ -154,22 +164,22 @@ body {
   .apple_pagination a {
     font-weight: bold;
     text-decoration: none;
-    color: #393939; 
+    color: #393939;
      font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif ;
-     outline: none; 
+     outline: none;
      padding: 5px 0;
      width: 30px;
      text-align: center;  }
     .apple_pagination a:hover, .apple_pagination a:focus {
-      text-shadow: #EBEBEB 1px 1px 1px; 
+      text-shadow: #EBEBEB 1px 1px 1px;
       -moz-border-radius: 1em;
-      -webkit-border-radius: 1em; 
-      line-height: 1.4em; 
+      -webkit-border-radius: 1em;
+      line-height: 1.4em;
       border-radius: 1em;
-      text-decoration: underline; 
+      text-decoration: underline;
     }
 
-    
+
     .sidebar-outer {
       margin-top: 150px;
       position: relative;
